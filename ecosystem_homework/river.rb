@@ -19,8 +19,8 @@ class River
     end
 
 
-    def remove_fish (fish)
-      @fish_population.delete(fish)
+    def remove_fish ()
+      @fish_population.pop
 
     end
 

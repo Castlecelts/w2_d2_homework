@@ -39,7 +39,7 @@ class BearTest < MiniTest::Test
   end
 
   def test_can_bear_take_fish_from_river
-    @bear.eat_fish(@fish1)
+    @bear.eat_fish(@river)
 
     expected = 1
     actual = @bear.stomach_contents.count
@@ -51,8 +51,8 @@ class BearTest < MiniTest::Test
   def test_has_river_lost_a_fish
     # @bear.eat_fish(@fish1)
     # @river.remove_fish(@fish1)
-    @river.remove_fish(@fish1)
-    @bear.eat_fish(@fish1)
+    # @river.remove_fish()
+    @bear.eat_fish(@river)
     expected = 1
     actual = @river.fish_population.count
 

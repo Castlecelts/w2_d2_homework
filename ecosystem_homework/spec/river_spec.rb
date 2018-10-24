@@ -44,8 +44,8 @@ class RiverTest < MiniTest::Test
   end
 
   def test_remove_fish_from_river
-    @river.remove_fish(@fish1)
-    @river.remove_fish(@fish2)
+    @river.remove_fish()
+    @river.remove_fish()
     expected = 0
     actual = @river.fish_population.count
 

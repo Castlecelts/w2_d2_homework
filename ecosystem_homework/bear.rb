@@ -11,36 +11,26 @@ class Bear
   end
 
 
-  def eat_fish (fish)
+  def eat_fish (river)
     # fish_in_limbo = @stomach_content.pop
+    fish = river.remove_fish
     @stomach_contents << fish
     # for x in fish
     #   @fish_population.remove_fish(x)
     # end
   end
 
-#   bus spec.rb
-#     @stop1.add_to_queue(@passenger1)
-#     @bus.pick_up_from_stop(@stop1)
-#
-# bus.rb
-# def pick_up_from_stop(stop)
-#   for person in stop.queue()
-#     pick_up(person)
-#   end
-#   stop.clear_queue()
-# end
-#
-# bus_stop.rb
-# def add_to_queue(person)
-#   @queue.push(person)
-# end
-
-
-
-
-
-
-
 
 end
+
+# do a simple function, then use it inside a more complex function.
+
+
+# def eat(fish)
+# @stomach_content << fish2
+# end
+#
+# def take_fish_from_river(river)
+#   fish = river.get_fish()
+#   eat(fish)
+# end
